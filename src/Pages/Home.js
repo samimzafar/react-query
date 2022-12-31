@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import axios from "axios";
-import { useParams, useNavigate, createSearchParams } from "react-router-dom";
+import { useParams, useNavigate} from "react-router-dom";
 import { Button, Container, Flex, Grid, Heading, Spinner, Stack, Text, useToast } from "@chakra-ui/react";
 const fetchData = async (id) => {
  try {
