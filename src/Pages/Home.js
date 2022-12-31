@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import axios from "axios";
-import { useParams, useNavigate} from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Button, Container, Flex, Grid, Heading, Spinner, Stack, Text, useToast } from "@chakra-ui/react";
 const fetchData = async (id) => {
  try {
@@ -13,7 +13,6 @@ const fetchData = async (id) => {
 };
 const Home = () => {
  const { id } = useParams();
- console.log("🚀 ~ file: Home.js:16 ~ Home ~ id", id);
  const navigate = useNavigate();
  const pageID = parseInt(id);
  const toast = useToast();
